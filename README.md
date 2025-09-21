@@ -6,7 +6,7 @@ Designs
 Below are the screenshots of the designed pages, linked to the corresponding HTML files in the `Design` folder. These visuals showcase the user interface and layout.
 
  1. Customer List Page
-[Customer List Design](https://github.com/Roki58/customer-management-system/blob/main/Design/Customer%20List%20Page.PNG)
+![Customer List Design](https://github.com/Roki58/customer-management-system/blob/main/Design/Customer%20List%20Page.PNG)
 Features a searchable table with customer details (ID, Name, Email, Phone) and action buttons (View, Edit, Delete, Print) under the "Customer Management System" header. 
 
  2. Add Customer Form
