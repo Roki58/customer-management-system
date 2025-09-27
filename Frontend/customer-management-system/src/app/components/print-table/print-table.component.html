@@ -1,0 +1,30 @@
+<div class="container mx-auto p-4">
+  <h1 class="text-xl font-bold text-center border-b pb-2">Customer Management System</h1>
+  <table class="w-full border-collapse border mt-4">
+    <thead>
+      <tr class="bg-gray-800 text-white">
+        <th class="border p-2">ID</th>
+        <th class="border p-2">Name</th>
+        <th class="border p-2">Email</th>
+        <th class="border p-2">Mobile Number</th>
+        <th class="border p-2">Address</th>
+        <th class="border p-2">Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td class="border p-2">{{ customer.id }}</td>
+        <td class="border p-2">{{ customer.name }}</td>
+        <td class="border p-2">{{ customer.email }}</td>
+        <td class="border p-2">{{ customer.mobileNumber }}</td>
+        <td class="border p-2">{{ customer.address }}</td>
+        <td class="border p-2">${{ customer.balance }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="text-right border-t pt-2">
+    <p>Total Balance: ${{ totalBalance }}</p>
+    <p>Printed on {{ today | date:'mediumDate' }}</p>
+    <button (click)="print()" class="bg-green-500 text-white px-4 py-2 rounded mt-2">Print</button>
+  </div>
+</div>
